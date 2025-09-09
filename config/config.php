@@ -1,7 +1,7 @@
 <?php
 // ====== ENV ======
 define('APP_NAME', 'Couples Intimacy');
-define('BASE_URL', getenv('APP_BASE_URL') ?: '/'); // e.g., '/app/' if using subfolder
+define('BASE_URL', getenv('APP_BASE_URL') ?: '/intimacy/couples_intimacy_app_starter/'); // e.g., '/app/' if using subfolder
 define('FORCE_HTTPS', false); // set true if you have SSL
 
 // ====== DB ======
@@ -30,3 +30,6 @@ if (!is_dir(UPLOADS_PATH)) { mkdir(UPLOADS_PATH, 0775, true); }
 
 // ====== SECURITY ======
 define('PASSWORD_ALGO', PASSWORD_DEFAULT);
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
